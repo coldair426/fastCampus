@@ -1,10 +1,15 @@
 import React from 'react';
+import './App.css';
 import Hello from './Hello';
+import Wrapper from './Wrapper';
 
 function App() {
   return (
     <>
-      <Hello />
+      <Wrapper>
+        <Hello name='react' color='red' />
+        <Hello color='pink'></Hello>
+      </Wrapper>
     </>
   );
 }
